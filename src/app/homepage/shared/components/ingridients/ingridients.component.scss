@@ -1,0 +1,20 @@
+.ingridients__img {
+    position: relative;
+    & .ingridient__img-item01 {
+        position: relative;
+        top: 0px;
+        z-index: 10;
+    }
+    & .ingridient__img-item02 {
+        position: relative;
+        top: -750px;
+        left: -170px;
+        z-index: 9;
+    }
+    & .ingridient__img-item03 {
+        position: relative;
+        top: -1350px;
+        left: -100px;
+        z-index: 8;
+    }
+}
