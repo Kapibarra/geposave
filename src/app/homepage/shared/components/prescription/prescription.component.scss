@@ -1,0 +1,76 @@
+.prescription-wrapper {
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.prescription__title {
+    color: #ff6107;
+    box-sizing: border-box;
+    padding: 5px 12px;
+    background: #F1FAF9;
+    width: fit-content;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.prescription {
+    width: 100%;
+    max-width: 1420px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    & .bg-blue {
+        background: #EDFFFD;
+    }
+    & .bg-lightbrown {
+        background: #FFF8F4;
+    }
+    & .prescription__card {
+        max-width: 360px;
+        margin-top: 100px;
+        &:nth-child(1) {
+            margin-top: 0px;
+        }
+        &:nth-child(2) {
+            margin-top: 0px;
+        }
+        &:nth-child(3) {
+            margin-top: 0px;
+        }
+        & .prescription__card-title {
+            border-radius: 4px;
+            padding: 8px 35px;
+            font-size: 24px;
+            font-weight: 800;
+            color: #124F48;
+            text-align: center;
+            margin-bottom: 6px;
+            box-shadow: 0px 4px 84px rgba(#8EC7C0, 0.3);
+        }
+        & .prescription__inner-card-wrapper {
+            border-radius: 30px;
+            box-shadow: 0px 4px 84px rgba(#8EC7C0, 0.3);
+        }
+        & .prescription__primary-img {
+            max-width: 330px;
+            margin-bottom: 5px;
+            padding: 15px;
+            & img {
+                max-width: 330px;
+            }
+        }
+        & .prescription__card-description {
+            font-size: 16px;
+            line-height: 22px;
+            padding: 0px 15px;
+            font-weight: 400;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+    }
+}
