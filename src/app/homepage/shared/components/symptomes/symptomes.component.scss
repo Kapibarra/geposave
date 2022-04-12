@@ -1,6 +1,20 @@
 .symptomes-wrapper {
     width: 100%;
+    max-width: 1420px;
     margin: 0 auto;
+}
+
+.symptomes__title {
+    color: #ff6107;
+    box-sizing: border-box;
+    padding: 5px 12px;
+    background: #F1FAF9;
+    width: fit-content;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 90px;
+    margin-top: -210px;
 }
 
 .symptomes {
