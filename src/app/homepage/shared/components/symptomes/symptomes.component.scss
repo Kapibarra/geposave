@@ -1,0 +1,84 @@
+.symptomes-wrapper {
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.symptomes__title {
+    color: #ff6107;
+    box-sizing: border-box;
+    padding: 5px 12px;
+    background: #F1FAF9;
+    width: fit-content;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 90px;
+    margin-top: -210px;
+}
+
+.symptomes {
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & .symptomes__left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        & .symptomes__item {
+            width: 248px;
+            height: 248px;
+            border-radius: 50%;
+            background: #124F48;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding-top: 30px;
+            & p {
+                background: #FF6107;
+                box-sizing: border-box;
+                padding: 11px 30px;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                color: #fff;
+                border-radius: 30px;
+            }
+        }
+    }
+    & .symptomes__right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        & .symptomes__item {
+            width: 248px;
+            height: 248px;
+            border-radius: 50%;
+            background: #124F48;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding-top: 30px;
+            & p {
+                background: #FF6107;
+                box-sizing: border-box;
+                padding: 11px 30px;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                color: #fff;
+                border-radius: 30px;
+            }
+        }
+    }
+}
