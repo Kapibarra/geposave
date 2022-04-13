@@ -17,6 +17,7 @@ import { BlogComponent } from './homepage/shared/components/blog/blog.component'
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
 import { AnimationData } from './homepage/shared/services/animationData.service';
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
+import { AlertComponent } from './admin/shared/components/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BurgerComponent } from './homepage/shared/components/burger/burger.comp
     LocationsComponent,
     BlogComponent,
     FooterComponent,
-    BurgerComponent
+    BurgerComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
