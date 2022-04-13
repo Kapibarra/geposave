@@ -16,7 +16,11 @@ import { AnimationData } from '../../services/animationData.service';
 })
 export class HeroComponent implements OnInit, AfterViewInit {
   animateText!: string;
-  constructor(private animationService: AnimationData) {}
+  constructor(private animationService: AnimationData) {
+
+  }
+
+  animateText2!:string
 
   @ViewChildren('parallaxHero')
   public parallaxHero!: QueryList<ElementRef<HTMLLIElement>>;
@@ -39,6 +43,8 @@ export class HeroComponent implements OnInit, AfterViewInit {
     this.animateText = animateObj.animationData.toString();
     console.log(this.animateText);
     
+
+    this.animateText2= `123`
   }
   ngAfterViewInit() {
   }
