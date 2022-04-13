@@ -16,6 +16,7 @@ import { LocationsComponent } from './homepage/shared/components/locations/locat
 import { BlogComponent } from './homepage/shared/components/blog/blog.component';
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
 import { AnimationData } from './homepage/shared/services/animationData.service';
+import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AnimationData } from './homepage/shared/services/animationData.service'
     HowitworksComponent,
     LocationsComponent,
     BlogComponent,
-    FooterComponent
+    FooterComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule,
