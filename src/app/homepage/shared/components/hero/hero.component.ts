@@ -17,17 +17,15 @@ export class HeroComponent implements OnInit, AfterViewInit {
   constructor() {}
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: any) {
-  console.log(event);
-  
-    this.parallaxLayer.forEach(layer => {
+    this.parallaxHero.forEach(layer => {
       const speed:any = layer.nativeElement.getAttribute('data-speed');
       const x = (window.innerWidth - event.pageX*speed)/100  ;
       const y = (window.innerHeight - event.pageY*speed)/100;  
       layer.nativeElement.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
   }
-  @ViewChildren('parallaxLayer')
-  public parallaxLayer!: QueryList<ElementRef<HTMLLIElement>>;
+  @ViewChildren('parallaxHero')
+  public parallaxHero!: QueryList<ElementRef<HTMLLIElement>>;
 
   ngOnInit(): void {
   }
