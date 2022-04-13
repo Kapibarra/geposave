@@ -15,6 +15,8 @@ import {
 })
 export class HeroComponent implements OnInit, AfterViewInit {
   constructor() {}
+  @ViewChildren('parallaxHero')
+  public parallaxHero!: QueryList<ElementRef<HTMLLIElement>>;
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: any) {
     this.parallaxHero.forEach(layer => {
@@ -24,9 +26,7 @@ export class HeroComponent implements OnInit, AfterViewInit {
       layer.nativeElement.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
   }
-  @ViewChildren('parallaxHero')
-  public parallaxHero!: QueryList<ElementRef<HTMLLIElement>>;
-
+  
   ngOnInit(): void {
   }
   ngAfterViewInit() {

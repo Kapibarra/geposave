@@ -8,6 +8,8 @@ import { Component, OnInit, HostListener, ViewChildren, ElementRef, QueryList } 
 export class IngridientsComponent implements OnInit {
 
   constructor() { }
+  @ViewChildren('parallaxIngridients')
+  public parallaxIngridients!: QueryList<ElementRef<HTMLLIElement>>;
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: any) {
     this.parallaxIngridients.forEach(layer => {
@@ -17,8 +19,6 @@ export class IngridientsComponent implements OnInit {
       layer.nativeElement.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
   }
-  @ViewChildren('parallaxIngridients')
-  public parallaxIngridients!: QueryList<ElementRef<HTMLLIElement>>;
 
   ngOnInit(): void {
   }
