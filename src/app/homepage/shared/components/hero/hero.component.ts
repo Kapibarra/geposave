@@ -1,4 +1,3 @@
-import { getAttrsForDirectiveMatching } from '@angular/compiler/src/render3/view/util';
 import {
   AfterViewInit,
   Component,
@@ -24,12 +23,8 @@ export class HeroComponent implements OnInit, AfterViewInit {
       const speed:any = layer.nativeElement.getAttribute('data-speed');
       const x = (window.innerWidth - event.pageX*speed)/100  ;
       const y = (window.innerHeight - event.pageY*speed)/100;  
-  
       layer.nativeElement.style.transform = `translateX(${x}px) translateY(${y}px)`
-
     })
-    
-    
   }
   @ViewChildren('parallaxLayer')
   public parallaxLayer!: QueryList<ElementRef<HTMLLIElement>>;
@@ -37,6 +32,5 @@ export class HeroComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
   }
   ngAfterViewInit() {
-     
   }
 }
