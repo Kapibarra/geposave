@@ -135,3 +135,17 @@
         top: -900px !important;
     }
 }
+
+@media screen and (max-width:428px) {
+    .hero__icons-wrapper {
+        right: -15% !important;
+    }
+    .hero__image-item-3 {
+        left: 5px !important;
+        top: -800px !important;
+    }
+    .hero__image-item-2 {
+        top: -390px !important;
+        left: -100px !important;
+    }
+}

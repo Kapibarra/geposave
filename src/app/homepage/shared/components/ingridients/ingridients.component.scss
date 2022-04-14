@@ -100,3 +100,24 @@
         max-height: 500px;
     }
 }
+
+@media screen and (max-width:428px) {
+    .ingridients__list {
+        & ul {
+            & li {
+                font-size: 16px !important;
+            }
+        }
+    }
+    .ingridients__img {
+        max-height: 550px !important;
+    }
+    .ingridient__img-item01 {
+        max-width: 408px;
+        width: 100%;
+        & img {
+            max-width: 408px;
+            width: 100%;
+        }
+    }
+}
