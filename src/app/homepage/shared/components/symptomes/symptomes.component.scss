@@ -139,10 +139,13 @@
 
 @media screen and (max-width:428px) {
     .symptomes-wrapper {
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .symptomes__item-description {
         font-size: 14px !important;
+        min-height: 55px;
+        display: flex;
+        align-items: center;
     }
     .symptomes__item {
         width: 150px !important;

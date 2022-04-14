@@ -137,8 +137,29 @@
 }
 
 @media screen and (max-width:428px) {
+    .hero {
+        padding: 15px !important;
+        & .hero__image {
+            max-height: 400px;
+        }
+    }
+    .block__title {
+        margin-bottom: 20px !important;
+    }
+    .hero__subtitle {
+        margin-top: 25px !important;
+    }
+    .hero__title {
+        font-size: 28px !important;
+        font-weight: 700;
+        color: #282828;
+        & .hero__title-bigfont {
+            font-size: 40px !important;
+            font-weight: 700;
+        }
+    }
     .hero__icons-wrapper {
-        right: -15% !important;
+        right: -5% !important;
     }
     .hero__image-item-3 {
         left: 5px !important;
