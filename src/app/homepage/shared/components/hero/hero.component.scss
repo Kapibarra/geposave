@@ -80,18 +80,36 @@
             position: relative;
             top: 30px;
             z-index: 10;
+            width: 100%;
+            max-width: 464px;
+            & img {
+                width: 100%;
+                max-width: 464px;
+            }
         }
         & .hero__image-item-2 {
             position: relative;
-            top: -600px;
-            left: -150px;
+            top: -500px;
+            left: -120px;
             z-index: 9;
+            width: 100%;
+            max-width: 323px;
+            & img {
+                width: 100%;
+                max-width: 323px;
+            }
         }
         & .hero__image-item-3 {
             position: relative;
-            top: -1120px;
-            left: 150px;
+            width: 100%;
+            max-width: 241px;
+            top: -980px;
+            left: 120px;
             z-index: 8;
+            & img {
+                width: 100%;
+                max-width: 241px;
+            }
         }
     }
 }
@@ -165,13 +183,15 @@
     }
     .hero__icons-wrapper {
         right: -5% !important;
+        top: -100px !important;
     }
     .hero__image-item-3 {
-        left: 5px !important;
-        top: -800px !important;
+        left: 150px !important;
+        top: -850px !important;
     }
     .hero__image-item-2 {
         top: -390px !important;
-        left: -100px !important;
+        left: -30px !important;
+        ;
     }
 }
