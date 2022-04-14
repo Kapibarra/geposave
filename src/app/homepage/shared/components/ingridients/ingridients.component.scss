@@ -82,3 +82,21 @@
         z-index: 8;
     }
 }
+
+@media screen and (max-width:1325px) {
+    .ingridients {
+        flex-direction: column;
+        max-height: unset !important;
+    }
+    .ingridients__list {
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .ingridients__img {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 100px;
+        max-height: 500px;
+    }
+}
