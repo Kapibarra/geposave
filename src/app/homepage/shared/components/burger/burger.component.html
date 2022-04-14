@@ -1,26 +1,20 @@
-<nav role="navigation">
-    <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <ul id="menu">
-            <a href="#">
-                <li>Главная</li>
-            </a>
-            <a href="#">
-                <li>Статьи</li>
-            </a>
-            <a href="#">
-                <li>О препарате</li>
-            </a>
-            <a href="#">
-                <li>Где купить?</li>
-            </a>
-            <a href="#">
-                <li>Контакты</li>
-            </a>
-        </ul>
+<div class="burger-menu" [class.active]="active" (click)="onBurgerClicked()">
+    <p class="burger-menu-btn">МЕНЮ</p>
+    <div class="burger-container">
+        <div class="burger-inner"></div>
     </div>
-</nav>
+    <div class="overlay">
+        <div class="burger__nav-contacts">
+            <a href="tel:+79663270432" class="burger__nav-phone">+7 (999) 999 99 99</a>
+            <a href="mailto:info@electro-hand.ru" class="burger__nav-mail">info@geposave.ru</a>
+        </div>
+        <ul class="burger__nav">
+            <li class="header__nav-item"><a (click)="onClickScroll('')">Главная</a></li>
+            <li class="header__nav-item"><a (click)="onClickScroll('blog')">Статьи</a></li>
+            <li class="header__nav-item"><a (click)="onClickScroll('about')">О препарате</a></li>
+            <li class="header__nav-item"><a (click)="onClickScroll('locations')">Где купить?</a></li>
+            <li class="header__nav-item"><a (click)="onClickScroll('contacts')">Контакты</a></li>
+        </ul>
+        <div class="burger__logo"><img src="assets/img/main_logo.png"></div>
+    </div>
+</div>
