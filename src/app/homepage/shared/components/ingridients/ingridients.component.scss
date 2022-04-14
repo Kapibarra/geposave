@@ -34,20 +34,24 @@
         background: #EDFFFD;
         color: #282828;
         height: auto;
-        max-height: 800px;
+        max-height: 840px;
         & ul {
             max-width: 600px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            list-style: url('/assets/icons/ul_icon01.png');
-            list-style-position: outside;
             & li {
                 font-size: 24px;
                 font-weight: 300;
                 margin-bottom: 32px;
                 margin-left: 30px;
                 line-height: 33px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                & img {
+                    margin-right: 15px;
+                }
             }
             & li:first-child {
                 margin-top: 50px;
