@@ -68,3 +68,12 @@
         }
     }
 }
+
+@media screen and (max-width:1280px) {
+    .howitworks__img {
+        margin: 0 auto;
+    }
+    .howitworks__list {
+        margin: 0 auto;
+    }
+}
