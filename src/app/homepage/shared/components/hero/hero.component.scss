@@ -110,3 +110,28 @@
         margin: 15px;
     }
 }
+
+@media screen and (max-width:720px) {
+    .hero__image-item-3 {
+        left: 100px !important;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .hero__image {
+        & div {
+            width: 100%;
+        }
+        & img {
+            width: 100%;
+            max-width: 350px;
+            overflow: hidden;
+        }
+    }
+    .hero__image-item-2 {
+        top: -490px !important;
+    }
+    .hero__image-item-3 {
+        top: -900px !important;
+    }
+}
