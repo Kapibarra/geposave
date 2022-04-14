@@ -29,6 +29,12 @@
                     font-size: 20px;
                     font-weight: 700;
                     color: #282828;
+                    transition: all 250ms ease-in-out;
+                    &:hover {
+                        transition: all 250ms ease-in-out;
+                        cursor: pointer;
+                        color: #F74902;
+                    }
                 }
             }
         }
@@ -45,8 +51,11 @@
         color: #FFFFFF;
         font-size: 20px;
         font-weight: 700;
+        transition: all 250ms ease-in-out;
         &:hover {
+            transition: all 250ms ease-in-out;
             cursor: pointer;
+            background: #2FB5A7;
         }
     }
 }

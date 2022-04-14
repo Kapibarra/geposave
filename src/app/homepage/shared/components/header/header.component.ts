@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, DoCheck, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
@@ -6,7 +7,7 @@ import { Component, DoCheck, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit, DoCheck {
   mobile = false;
-  constructor() { }
+  constructor(private viewportscroller: ViewportScroller) { }
 
   ngOnInit(): void {
     if (window.screen.width <= 968) {
@@ -26,4 +27,7 @@ export class HeaderComponent implements OnInit, DoCheck {
       console.log('false', this.mobile);
     }
   }
+  onClickScroll(elementId: string):void {
+    this.viewportscroller.scrollToAnchor(elementId);
+     }
 }

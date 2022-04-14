@@ -63,7 +63,12 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            &:hover {}
+            transition: all 250ms ease-in-out;
+            &:hover {
+                background: #FF7715;
+                transition: all 250ms ease-in-out;
+                cursor: pointer;
+            }
         }
     }
     & .hero__image {

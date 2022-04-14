@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import {
   AfterViewInit,
   Component,
@@ -16,8 +17,10 @@ import { AnimationData } from '../../services/animationData.service';
 })
 export class HeroComponent implements OnInit, AfterViewInit {
   animateText!: string;
-  constructor(private animationService: AnimationData) {
-
+  constructor(
+    private animationService: AnimationData,
+    private viewportscroller: ViewportScroller
+    ) {
   }
 
   animateText2!:string
@@ -48,4 +51,7 @@ export class HeroComponent implements OnInit, AfterViewInit {
   }
   ngAfterViewInit() {
   }
+  onClickScroll(elementId: string):void {
+    this.viewportscroller.scrollToAnchor(elementId);
+     }
 }
