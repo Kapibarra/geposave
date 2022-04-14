@@ -82,3 +82,30 @@
         }
     }
 }
+
+@media screen and (max-width:968px) {
+    .symptomes {
+        flex-direction: column;
+    }
+    .symptomes__left {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 648px;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+    }
+    .symptomes__item-center {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 648px;
+    }
+    .symptomes__right {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 648px;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+    }
+}
