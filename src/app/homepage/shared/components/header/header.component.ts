@@ -13,7 +13,6 @@ export class HeaderComponent implements OnInit, DoCheck {
     if (window.screen.width <= 968) {
       // 768px portrait
       this.mobile = true;
-      console.log('mobile', this.mobile);
     }
   }
 
@@ -21,10 +20,6 @@ export class HeaderComponent implements OnInit, DoCheck {
     if (window.screen.width <= 968) {
 //resizeable
       this.mobile = true;
-      console.log('mobile', this.mobile);
-    } else {
-      this.mobile = false;
-      console.log('false', this.mobile);
     }
   }
   onClickScroll(elementId: string):void {
