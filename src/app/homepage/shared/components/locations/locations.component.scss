@@ -1,0 +1,60 @@
+.locations_title-block{
+    display: flex;
+    width: 100%;
+    max-width: 1270px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+      
+    }
+    .block_title{
+     color: #ff6107;
+     box-sizing: border-box;
+      background: #fff;
+      margin-top:0px; 
+      padding-top:0px;
+     font-size: 24px;
+     font-weight: 900;
+     margin-bottom: 110px;
+    } 
+    .navigation_image{
+     display: flex;
+      background: #EDFFFD;
+      border-radius: 30px;
+      box-sizing: border-box;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      
+    }
+    .navigation__image1{
+    
+     
+      
+    }
+    
+    ul{
+      list-style-type: none;
+      
+    }
+    .title-name-navigation{
+      background: #EDFFFD;
+      border-radius: 30px;
+      box-sizing: border-box;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      
+    }
+    .adress_street{
+      text-decoration: none;
+      line-height: 2;
+      list-style-type: none;
+      padding-right: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #282828;
+      margin-top: 65px;
+      letter-spacing: 1px
+    }
+                
