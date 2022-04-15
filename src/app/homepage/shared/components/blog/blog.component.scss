@@ -1,0 +1,101 @@
+.blog_wrapper {
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.blog__title {
+    color: #ff6107;
+    box-sizing: border-box;
+    padding: 5px 12px;
+    background: #F1FAF9;
+    width: fit-content;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.blog {
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & .blog__card {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 10px;
+        background: rgba(#ffffff, 0);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            background: rgba(#ffffff, 1);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 3px 84px rgba(#8EC7C0, 0.3);
+        }
+        & .blog__card-date {
+            position: relative;
+            top: -92%;
+            left: 90%;
+            right: 0px;
+            height: 75px;
+            width: 75px;
+            box-sizing: border-box;
+            padding: 7px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            background: #124F48;
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        & .blog__card-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #282828;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        & .blog__card-img {}
+        & .blog__card-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #282828;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        & .blog__card-btn {
+            width: 235px;
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            border: none;
+            background: #FF7715;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 700;
+            transition: all 250ms ease-in-out;
+            &:hover {
+                transition: all 250ms ease-in-out;
+                cursor: pointer;
+                background: #2FB5A7;
+            }
+            & img {
+                margin-left: 15px;
+            }
+        }
+    }
+}
