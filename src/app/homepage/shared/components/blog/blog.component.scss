@@ -65,7 +65,10 @@
             margin-bottom: 40px;
             text-align: left;
         }
-        & .blog__card-img {}
+        & .blog__card-img {
+            width: 100%;
+            max-width: 460px;
+        }
         & .blog__card-text {
             font-size: 16px;
             font-weight: 400;
@@ -97,5 +100,11 @@
                 margin-left: 15px;
             }
         }
+    }
+}
+
+@media screen and (max-width:428px) {
+    .blog__card-date {
+        left: 89% !important;
     }
 }

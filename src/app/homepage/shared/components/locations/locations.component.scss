@@ -61,3 +61,13 @@
         }
     }
 }
+
+@media screen and (max-width:428px) {
+    .locations {
+        flex-direction: column !important;
+        align-content: center !important;
+        & .locations__card {
+            margin-top: 40px;
+        }
+    }
+}
