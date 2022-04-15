@@ -1,22 +1,58 @@
-.location-wrapper {
+.locations__wrapper {
   width: 100%;
-  max-width: 1287px;
+  max-width: 1420px;
   margin: 0 auto;
 }
 
-.location_title {
+.locations__title {
   color: #ff6107;
   box-sizing: border-box;
-  margin-top: 0px;
+  margin-top: 60px;
   padding: 5px 12px;
   font-size: 24px;
   font-weight: 900;
-  margin-bottom: 70px;
-  border-radius: 2px;
+  margin-bottom: 60px;
+  border-radius: 4px;
   background: #edfffd;
-  max-width: 170px;
+  width: fit-content;
 }
+.locations{
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  & .locations__card{
+    width: 100%;
+    max-width: 255px;
+    background: #fff;
+    border-radius: 10px;
+    & .locations__card-img{
+        box-sizing: border-box;
+      padding: 10px 8px;
+      border-radius: 10px;
+       background: #f1faf9;
+       height: 103px;
 
+    }
+    & .locations__card-description{
+      box-sizing: border-box;
+      padding: 10px 8px;
+      border-radius: 10px;
+       background: #f1faf9;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    & .ul{
+      & .li{
+        margin-top: 15px;
+      }
+    }
+  }
+
+}
 .location_card-wrapper {
   display: flex;
   flex-direction: row;
@@ -164,4 +200,21 @@ ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.number-title{
+  position: relative;
+}
+.number_date{
+  width: 50px;
+  display: block;
+   height: 45px;
+    background-color: #124f48;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 5px;
+  left: 95%;
+bottom: -25px;
+    position: absolute;
+    
 }
