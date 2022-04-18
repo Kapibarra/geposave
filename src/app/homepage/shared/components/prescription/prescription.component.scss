@@ -75,3 +75,20 @@
         }
     }
 }
+
+@media screen and (max-width:968px) {
+    .prescription {
+        & .prescription__card {
+            margin-top: 100px;
+            &:nth-child(1) {
+                margin-top: 100px;
+            }
+            &:nth-child(2) {
+                margin-top: 100px;
+            }
+            &:nth-child(3) {
+                margin-top: 100px;
+            }
+        }
+    }
+}
