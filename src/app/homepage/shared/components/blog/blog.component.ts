@@ -13,6 +13,6 @@ export class BlogComponent implements OnInit {
   ngOnInit(): void {
   }
   goToPostsPage1() {
-    this.Router.navigate(['/news/1'])
+    this.Router.navigate(['news/1'])
   }
 }

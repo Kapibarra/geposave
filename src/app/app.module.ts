@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -49,7 +50,8 @@ import { NewsHeaderComponent } from './homepage/shared/news/news-header/news-hea
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [AnimationData],
   bootstrap: [AppComponent]
