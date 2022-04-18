@@ -18,6 +18,11 @@ import { FooterComponent } from './homepage/shared/components/footer/footer.comp
 import { AnimationData } from './homepage/shared/services/animationData.service';
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 import { AlertComponent } from './admin/shared/components/alert/alert.component';
+import { News1Component } from './homepage/shared/news/news1/news1.component';
+import { News2Component } from './homepage/shared/news/news2/news2.component';
+import { News3Component } from './homepage/shared/news/news3/news3.component';
+import { NewsFooterComponent } from './homepage/shared/news/news-footer/news-footer.component';
+import { NewsHeaderComponent } from './homepage/shared/news/news-header/news-header.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,12 @@ import { AlertComponent } from './admin/shared/components/alert/alert.component'
     BlogComponent,
     FooterComponent,
     BurgerComponent,
-    AlertComponent
+    AlertComponent,
+    News1Component,
+    News2Component,
+    News3Component,
+    NewsFooterComponent,
+    NewsHeaderComponent
   ],
   imports: [
     BrowserModule,
