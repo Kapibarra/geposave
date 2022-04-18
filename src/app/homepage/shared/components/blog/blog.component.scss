@@ -1,3 +1,9 @@
+:host::ng-deep {
+    @import 'swiper/scss';
+    @import 'swiper/scss/navigation';
+    @import 'swiper/scss/pagination';
+}
+
 .blog__wrapper {
     width: 100%;
     max-width: 1420px;
@@ -42,8 +48,9 @@
             box-shadow: 0px 3px 84px rgba(#8EC7C0, 0.3);
         }
         & .blog__card-date {
+            transform: translateY(35px);
             position: relative;
-            top: -92%;
+            bottom: -92%;
             left: 90%;
             right: 0px;
             height: 75px;
@@ -106,6 +113,6 @@
 
 @media screen and (max-width:428px) {
     .blog__card-date {
-        left: 89% !important;
+        left: 82% !important;
     }
 }
