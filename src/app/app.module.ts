@@ -19,8 +19,6 @@ import { FooterComponent } from './homepage/shared/components/footer/footer.comp
 import { AnimationData } from './homepage/shared/services/animationData.service';
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 import { AlertComponent } from './admin/shared/components/alert/alert.component';
-import { NewsFooterComponent } from './homepage/shared/news/news-footer/news-footer.component';
-import { NewsHeaderComponent } from './homepage/shared/news/news-header/news-header.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -40,8 +38,6 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     BurgerComponent,
     AlertComponent,
-    NewsFooterComponent,
-    NewsHeaderComponent
   ],
   imports: [
     BrowserModule,
