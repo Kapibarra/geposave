@@ -1,1 +1,3 @@
-<div [innerHTML]=post.html></div>
+<div class="post__container" *ngIf="!isLoading">
+    <div *ngIf="post.html != null" [innerHTML]="post.html"></div>
+</div>

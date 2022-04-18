@@ -21,6 +21,8 @@ import { AnimationData } from './homepage/shared/services/animationData.service'
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 import { AlertComponent } from './admin/shared/components/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedPipesModule } from './pipes/pipes.module';
+import { PostComponent } from './homepage/shared/news/post/post.component';
 
 @NgModule({
   declarations: [
@@ -39,13 +41,15 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     BurgerComponent,
     AlertComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    SwiperModule,
+    SwiperModule, 
+    SharedPipesModule   
   ],
   providers: [AnimationData],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { News } from '../../classes/news';
@@ -9,8 +9,9 @@ import { News } from '../../classes/news';
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.scss']
 })
-export class PostComponent implements OnInit {
+export class PostComponent implements OnInit, OnDestroy,AfterContentInit {
   post!: News; // this is interface
+  isLoading:boolean = true;
   private routeSub? : Subscription | null;
   constructor(private router: ActivatedRoute, private http: HttpClient) { }
 
@@ -21,7 +22,12 @@ export class PostComponent implements OnInit {
       this.post = response;
     });
     })
-
   }
-
+  ngAfterContentInit() {
+    this.isLoading = false
+  }
+  ngOnDestroy() {
+    if (this.routeSub) this.routeSub.unsubscribe();
+  }
 }
+

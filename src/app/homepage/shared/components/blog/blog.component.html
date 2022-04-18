@@ -5,7 +5,7 @@
             <ng-template swiperSlide *ngFor="let post of news">
                 <div class="blog__card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div class="blog__card-date">{{post.date}}</div>
-                    <div class="blog__card-img"><img class="blog__card-img" [src]=post.image></div>
+                    <div class="blog__card-img"><img class="blog__card-img" [src]="post.image"></div>
                     <h3 class="blog__card-title">{{post.name}}</h3>
                     <p class="blog__card-text">{{post.description}}
                     </p>
