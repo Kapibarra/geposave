@@ -23,6 +23,6 @@ export class BlogComponent implements OnInit {
       });
   }
   goToPostsPage1() {
-    this.Router.navigate(['news/1']);
+    this.Router.navigate(['news']);
   }
 }
