@@ -17,7 +17,7 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
     this.routeSub = this.router.params.subscribe(params => {
       const id = params['id']
-    this.http.get(  `https://geposave-default-rtdb.europe-west1.firebasedatabase.app/News/${id}.json`).subscribe((response: any) => {
+    this.http.get(  `https://geposave-default-rtdb.europe-west1.firebasedatabase.app/news/${id}.json`).subscribe((response: any) => {
       this.post = response;
     });
     })

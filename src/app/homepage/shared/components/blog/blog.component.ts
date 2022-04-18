@@ -16,7 +16,7 @@ export class BlogComponent implements OnInit {
   ngOnInit(): void {
     this.http
       .get(
-        'https://geposave-default-rtdb.europe-west1.firebasedatabase.app/News.json'
+        'https://geposave-default-rtdb.europe-west1.firebasedatabase.app/news.json'
       )
       .subscribe((response: any) => {
         this.news = response;
