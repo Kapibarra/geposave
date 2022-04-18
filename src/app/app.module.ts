@@ -24,6 +24,7 @@ import { News2Component } from './homepage/shared/news/news2/news2.component';
 import { News3Component } from './homepage/shared/news/news3/news3.component';
 import { NewsFooterComponent } from './homepage/shared/news/news-footer/news-footer.component';
 import { NewsHeaderComponent } from './homepage/shared/news/news-header/news-header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { NewsHeaderComponent } from './homepage/shared/news/news-header/news-hea
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [AnimationData],
   bootstrap: [AppComponent]
