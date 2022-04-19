@@ -76,6 +76,8 @@
         & .blog__card-img {
             width: 100%;
             max-width: 460px;
+            max-height: 255px;
+            object-fit: cover;
         }
         & .blog__card-text {
             font-size: 16px;
