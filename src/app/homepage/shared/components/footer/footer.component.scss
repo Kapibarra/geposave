@@ -1,15 +1,23 @@
 .footer-wrapper{
     width: 100%;
-    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background: #124F48;
     color: #fff;
     font-size: 18px;
    
   }
   .footer{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-   justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
     
   }
   .footer_logo{
@@ -19,14 +27,14 @@
     height: 91px;
     padding-left: 50px;
     padding-top: 80px;
-    text-align: center;
+    
     
   }
   .footer-top{
     margin: 0 auto;
     font-weight: 400;
     font-size: 14px;
-    padding-top: 120px;
+    padding-top: 180px;
     font-weight: 400;
    
   }
@@ -37,7 +45,7 @@
     padding-top: 40px;
     padding-bottom:  40px;
     font-weight: 400;
-   padding-right: 70px;
+    padding-right: 70px;
   
   }
   

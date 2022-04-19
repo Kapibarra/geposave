@@ -23,7 +23,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
   & .locations__card{
     width: 100%;
     max-width: 255px;
@@ -43,7 +42,6 @@
      margin-top: 30px;
      display: flex;
      justify-content: center;
-     & .ul {
      & .li {
         margin-top: 15px;
        }
@@ -51,7 +49,6 @@
   }
 
   }
-}
 .location-content_wrapper {
   width: 100%;
   max-width: 1420px;
@@ -135,8 +132,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+ }
 }
-  }
 .intresting-info {
   width: 75px;
   height: 65px;
@@ -150,8 +147,6 @@
   top: 25%;
   margin-left: -50px;
   position: absolute;
-
-
 }
 .new-date {
   font-size: 24px;
@@ -163,8 +158,5 @@
   display: block;
   position: relative;
   margin-left: 0 auto;
-  
 }
-
-
-
+}
