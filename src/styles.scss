@@ -142,3 +142,44 @@ body {
     padding: 0px 10px;
     scroll-behavior: smooth;
 }
+
+
+/* NEWS PAGES*/
+
+.post__wrapper {
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.post {
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    & .post__title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    & .post__article {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    & .post__images {
+        width: 100%;
+        max-width: 1000px;
+        display: block;
+        margin: 0 auto;
+        & img {
+            width: 100%;
+            max-width: 1000px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

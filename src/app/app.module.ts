@@ -23,6 +23,7 @@ import { AlertComponent } from './admin/shared/components/alert/alert.component'
 import { HttpClientModule } from '@angular/common/http';
 import { SharedPipesModule } from './pipes/pipes.module';
 import { PostComponent } from './homepage/shared/news/post/post.component';
+import { NewsTemplateComponent } from './homepage/shared/news/news-template/news-template.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PostComponent } from './homepage/shared/news/post/post.component';
     FooterComponent,
     BurgerComponent,
     AlertComponent,
-    PostComponent
+    PostComponent,
+    NewsTemplateComponent
   ],
   imports: [
     BrowserModule,
