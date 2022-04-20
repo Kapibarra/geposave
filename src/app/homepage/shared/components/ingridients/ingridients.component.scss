@@ -65,6 +65,34 @@
                 margin-bottom: 0px;
             }
         }
+        & .ingridients__button {
+            width: fit-content;
+            height: 55px;
+            margin: 0 auto;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            box-sizing: border-box;
+            padding: 0px 15px;
+            border: none;
+            background: #FF7715;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 700;
+            transition: all 250ms ease-in-out;
+            & a {
+                text-decoration: none;
+                color: #F1FAF9;
+            }
+            &:hover {
+                transition: all 250ms ease-in-out;
+                cursor: pointer;
+                background: #2FB5A7;
+            }
+        }
     }
 }
 

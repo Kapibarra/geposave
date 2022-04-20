@@ -16,7 +16,7 @@
                 </ul>
             </div>
         </div>
-        <div class="header__button" data-aos="fade" data-aos-duration="1000" *ngIf="!mobile">Задать вопрос</div>
+        <div class="header__button" data-aos="fade" data-aos-duration="1000" *ngIf="!mobile" (click)="onClickScroll('footer')">Задать вопрос</div>
         <app-burger *ngIf="mobile"></app-burger>
     </div>
 </div>
