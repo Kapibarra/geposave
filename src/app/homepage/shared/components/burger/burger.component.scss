@@ -107,6 +107,8 @@ $burgerBarColor: #F74902;
             }
             & li a {
                 font-size: 32px;
+                text-decoration: none;
+                color: #282828;
                 & .nav__item-inner:before {
                     content: attr(data-text);
                     overflow: hidden;
