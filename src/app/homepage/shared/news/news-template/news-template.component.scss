@@ -12,6 +12,12 @@
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    & .post__bold {
+        font-weight: 18px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-weight: 900;
+    }
     & .post__title {
         font-size: 24px;
         font-weight: 900;
