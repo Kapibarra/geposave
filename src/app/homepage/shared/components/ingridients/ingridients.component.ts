@@ -6,7 +6,7 @@ import { Component, OnInit, HostListener, ViewChildren, ElementRef, QueryList } 
   styleUrls: ['./ingridients.component.scss']
 })
 export class IngridientsComponent implements OnInit {
-
+mobile = false;
   constructor() { }
   @ViewChildren('parallaxIngridients')
   public parallaxIngridients!: QueryList<ElementRef<HTMLLIElement>>;
@@ -21,6 +21,10 @@ export class IngridientsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (window.screen.width <= 968) {
+      // 768px portrait
+      this.mobile = true;
+    }
   }
   ngAfterViewInit() {
   }

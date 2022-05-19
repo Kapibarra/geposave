@@ -45,9 +45,6 @@ export class HeroComponent implements OnInit, AfterViewInit {
     let animateObj = JSON.parse(text!);  
     this.animateText = animateObj.animationData.toString();
     console.log(this.animateText);
-    
-
-    this.animateText2= `data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" data-aos-mirror="true"`
   }
   ngAfterViewInit() {
  
