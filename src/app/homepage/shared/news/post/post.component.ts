@@ -30,4 +30,3 @@ export class PostComponent implements OnInit, OnDestroy,AfterContentInit {
     if (this.routeSub) this.routeSub.unsubscribe();
   }
 }
-

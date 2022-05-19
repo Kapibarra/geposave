@@ -22,6 +22,7 @@
     }
     .footer__copyright {
         display: flex;
+        flex-direction: column;
         margin: 0 auto;
         font-weight: 400;
         font-size: 12px;
@@ -29,7 +30,15 @@
         box-sizing: border-box;
         padding-bottom: 10px;
         color: #fff;
-        align-items: flex-end;
+        align-items: center;
+        justify-content: center;
+        & a {
+            text-decoration: none;
+            margin-top: 30px;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 200;
+        }
     }
     .footer__info {
         display: flex;
@@ -40,6 +49,9 @@
         font-weight: 400;
         align-items: center;
         margin: 0 auto;
+        & ul li {
+            margin-top: 10px;
+        }
         & ul li a {
             color: #ffffff;
             text-decoration: none;
