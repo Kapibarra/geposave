@@ -17,6 +17,7 @@ import { AnimationData } from '../../services/animationData.service';
 })
 export class HeroComponent implements OnInit, AfterViewInit {
   animateText!: string;
+  mobile = false;
   constructor(
     private animationService: AnimationData,
     private viewportscroller: ViewportScroller
@@ -39,6 +40,10 @@ export class HeroComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    if (window.screen.width <= 968) {
+      // 768px portrait
+      this.mobile = true;
+    }
     const animateJSON = JSON.stringify(this.animationService);
     localStorage.setItem('testJSON', animateJSON)
     let text = localStorage.getItem('testJSON');

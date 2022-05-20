@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.mt150 {
+    margin-top: 150px !important;
+}
+
 .hero {
     width: 100%;
     max-width: 1420px;
@@ -160,6 +164,9 @@
 }
 
 @media screen and (max-width:428px) {
+    .desktop__only {
+        display: none;
+    }
     .hero {
         padding: 15px !important;
         & .hero__image {
